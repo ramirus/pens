@@ -1,0 +1,25 @@
+$circleSize: 80vh;
+$circleItemSize: 20px;
+
+.circle {
+  &-container {
+    margin: 20px auto;
+    width: $circleSize;
+    height: $circleSize;
+    position: relative;
+    border-radius: 50%;
+    border: 2px solid #cecece;
+    text-align: center;
+    box-shadow: 0 0 0px 2px #cecece;
+  }
+  &-item {
+    position: absolute;
+    background-color: red;
+    border-radius: 50%;
+    width: $circleItemSize;
+    height: $circleItemSize;
+    transition: transform 0.7s linear;
+    top: calc(50% - #{$circleItemSize/2});
+    left: calc(50% - #{$circleItemSize/2});
+  }
+}
