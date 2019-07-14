@@ -1,0 +1,36 @@
+@font-face {
+  font-family: FranklinGothic-Heavy;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/Franklin_Gothic_Heavy_Regular.woff);
+}
+@font-face {
+  font-family: Santana-Black;
+  src: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/santana-black.woff2) format('woff2'),
+    url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/santana-black.woff) format('woff');
+}
+
+.circle-text {
+  text-align: center;
+
+  svg {
+    height: 100vh;
+  }
+  .red-pepper {
+    text { 
+      font-size: 63px;
+      font-family: FranklinGothic-Heavy, Frankin Gothic, sans-serif;
+      font-weight: 900; 
+      text-transform: uppercase;
+      letter-spacing: 21px;
+      fill: black;
+    }
+  }
+  .starbucks {
+    text { 
+      font-family: Santana-Black, sans-serif; 
+      fill: #fff;
+      text-transform: uppercase;
+      font-size: 32px;
+    }
+    .coffee { letter-spacing: 6px; }
+  }
+}
